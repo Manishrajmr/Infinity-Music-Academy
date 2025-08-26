@@ -4,7 +4,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams"
 import { useState } from 'react';
 import { FormEvent } from 'react';
 
-const page = () => {
+const ContactPage = () => {
 
     const [email,setEmail]  = useState("");
     const [message,setMessage]  = useState("");
@@ -28,7 +28,7 @@ const page = () => {
           in your musical journey.
         </p>
 
-        <form action={handleSubmit} className="w-full  rounded-2xl mt-12  space-y-6">
+        <form onSubmit={handleSubmit} className="w-full  rounded-2xl mt-12  space-y-6">
         
 
         {/* Email */}
@@ -70,4 +70,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default ContactPage;

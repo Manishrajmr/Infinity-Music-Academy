@@ -14,7 +14,7 @@ interface Course{
         "image": string  
 }
 
-const page = () => {
+const CoursePage = () => {
   return (
     <div className='min-h-screen bg-black py-12 pt-36'>
 
@@ -23,7 +23,7 @@ const page = () => {
 
         <div className='flex flex-wrap justify-center'>
             {courseData.courses.map((course:Course)=>(
- <CardContainer key={course.id} className="inter-var m-4">
+ <CardContainer key={course.id} className="inter-var m-2">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -74,4 +74,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default CoursePage;
