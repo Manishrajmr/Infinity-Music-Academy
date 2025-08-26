@@ -2,6 +2,7 @@
 import React from 'react';
 import courseData from "@/data/music_courses.json"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import Image from 'next/image';
 
 interface Course{
         "id":number,
@@ -39,13 +40,21 @@ const CoursePage = () => {
           {course.description}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img
+          {/* <img
             src={course.image}
             height="1000"
             width="1000"
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt={course.title}
-          />
+          /> */}
+
+          <Image
+           src={course.image}
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt={course.title} />
+
         </CardItem>
         <div className="flex justify-between items-center mt-20">
           <CardItem
