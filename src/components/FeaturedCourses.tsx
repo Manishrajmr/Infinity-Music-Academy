@@ -41,11 +41,7 @@ const FeaturedCourses = () => {
                         <BackgroundGradient
                         className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
                             <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
-                                 {/* <img
-                                    src={course.image}
-                                    
-                                    className="object-contain"
-                                 /> */}
+                                 
 
                                   <Image
         src={course.image}

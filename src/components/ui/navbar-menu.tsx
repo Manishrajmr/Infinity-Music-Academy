@@ -5,14 +5,14 @@ import Image from "next/image";
 
 
 
-const transition = {
-  type: "spring",
-  mass: 0.5,
-  damping: 11.5,
-  stiffness: 100,
-  restDelta: 0.001,
-  restSpeed: 0.001,
-};
+// const transition = {
+//   type: "spring",
+//   mass: 0.5,
+//   damping: 11.5,
+//   stiffness: 100,
+//   restDelta: 0.001,
+//   restSpeed: 0.001,
+// };
 
 export const MenuItem = ({
   setActive,
@@ -110,7 +110,9 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink: React.FC<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
+>  = ({ children, ...rest }) => {
   return (
     <a
       {...rest}
