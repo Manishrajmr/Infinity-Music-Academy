@@ -17,8 +17,8 @@ const Navbar = ({ className }: { className?: string }) => {
         </MenuItem>
         </Link>
 
-         <MenuItem setActive={setActive} active={active} item="Our Courses">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+         <MenuItem setActive={setActive} active={active} item="Courses">
+          <div className="  text-sm grid grid-cols-1 sm:grid-cols-2 gap-10 p-4">
             <HoveredLink href="/courses">All Courses</HoveredLink>
             <HoveredLink href="/courses">
               Basic Music Theory
@@ -34,7 +34,7 @@ const Navbar = ({ className }: { className?: string }) => {
         </MenuItem>
 
         <Link href={"/contact"}>
-         <MenuItem setActive={setActive}  active={active} item="contact Us">
+         <MenuItem setActive={setActive}  active={active} item="Contact">
         </MenuItem>
         </Link>
 
